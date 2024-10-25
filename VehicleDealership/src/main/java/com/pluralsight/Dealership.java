@@ -15,8 +15,7 @@ public class Dealership {
         this.name = name;
         this.address = address;
         this.phone = phone;
-
-        // TODO: Instantiate ArrayList<Vehicle> object in constructor
+        this.inventory = new ArrayList<>();
     }
     public ArrayList<Vehicle> getVehiclesByPrice() {
         return null;

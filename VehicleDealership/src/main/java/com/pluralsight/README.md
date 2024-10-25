@@ -2,15 +2,18 @@
 
 ## Description of the Project
 
-This java application tracks ingoing and outgoing finances. It functions as an electronic version of a checkbook ledger, and it's target audience is your everyday worker. This solves a few problems,
-including misplacing a physical checkbook, budget mismanagement, and tracking the flow of money over different financial apps that do not integrate with each other, such as a couple with individual accounts
-tracking their expenses as a house.
+This java application tracks the inventory of vehicles across different dealerships. It allows the user to add and remove cars
+ to reflect purchases and changing inventory. It also allows the user to filter the current inventory by things like make and model,
+ mileage, and color. This app would be useful for an employee at a car dealership.
 
 ## User Stories
 
-List the user stories that guided the development of your application. Format these stories as: "As a [type of user], I want [some goal] so that [some reason]."
+These are the user stories that guided my development process:
 
-- As a user, I want 
+- As a salesperson, I want a clean and easily navigable interface to save me time.
+- As a salesperson, I want the ability to list my current inventory to know what in stock will appeal to my customer.
+- As a salesperson, I want the ability to add and remove vehicles to reflect our inventory as it changes.
+- As a salesperson, I want the ability to filter cars to narrow down options based on my customer's desires.
 
 ## Setup
 
@@ -49,12 +52,7 @@ Here are some screenshots of the program in action:
 ## Future Work
 
 Additional work that could be done with this project:
-- The ability to perform custom searches based on all fields
-- The ability to perform searches with partial matches for key terms
-- Adding the ability to leave fields blank when creating entries
-- Not including seconds in the time field
-- Cleaning up code with better logic. I'm sure there's a better way to implement some of these methods.
-- Adding a GUI
+
 
 ## Resources
 
@@ -68,12 +66,11 @@ In addition to the material covered in class, the following tutorials and docume
 
 ## Team Members
 
-- **Raymond Maroun** - Contributed skeleton code for initial commit.
+- **Corrie Salerno-Brazell** - Solo developer
 
 
 ## Thanks
 
 
-- Many thanks to Raymond, my Java bootcamp instructor, for being on standby to help with issues in my code and navigating git/github.
-- A big thank you to Cameron for helping me debug my writeToFile method.
-- Special thanks to Carmen and Aaron for their motivation, advice, help finding curly braces, and teaching me about the temporal adjuster.
+- Many thanks to Raymond, my Java bootcamp instructor, for being on standby to help with issues.
+- Thanks to Brandon for helping me instantiate the Inventory ArrayList from the Dealership Constructor.
