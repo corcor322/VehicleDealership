@@ -38,6 +38,10 @@ public class Dealership {
     public ArrayList<Vehicle> getAllVehicles() {
         return null;
     }
+
+    public void addVehicle(Vehicle vehicle) {
+        inventory.add(vehicle);
+    }
     public void addVehicle(Scanner scanner) {
         ArrayList<Vehicle> vehicles = new ArrayList<>();
         System.out.println("Enter the VIN of the vehicle you would like to add.");
@@ -53,6 +57,9 @@ public class Dealership {
         System.out.println("Enter the vehicle model.");
         String model = scanner.nextLine();
 
+        System.out.println("Enter the type of vehicle.");
+        String type = scanner.nextLine();
+
         System.out.println("Enter the color of the vehicle.");
         String color = scanner.nextLine();
 
@@ -64,8 +71,9 @@ public class Dealership {
 
         System.out.println("Thank you! Vehicle has been added.");
 
-        Vehicle vehicle = new Vehicle(vin, year, make, model, color, odometer, price);
+        Vehicle vehicle = new Vehicle(vin, year, make, model, type, color, odometer, price);
         vehicles.add(vehicle); //Add vehicle to array and to file
+        inventory.add(vehicle);
 
 
     }
