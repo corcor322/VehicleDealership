@@ -59,7 +59,7 @@ Additional work that could be done with this project:
 In addition to the material covered in class, the following tutorials and documentation were a great help to me:
 
 - [Java ArrayList](https://www.w3schools.com/java/java_arraylist.asp)**
-- [Java Time LocalDate Class](https://www.tutorialspoint.com/javatime/javatime_localdate.htm)
+- [Java Switch](https://www.w3schools.com/java/java_switch.asp)**
 - [Temporal Adjuster](https://docs.oracle.com/javase/tutorial/datetime/iso/adjusters.html)
 - [Compare Two LocalDate Instances in Java](https://howtodoinjava.com/java/date-time/compare-localdates/#:~:text=LocalDate%20equals()%20Method,can%20use%20equals()%20method.)
 
