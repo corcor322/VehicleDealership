@@ -2,6 +2,7 @@ package com.pluralsight;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Vector;
 
 public class Dealership {
     Scanner scanner = new Scanner(System.in);
@@ -31,8 +32,19 @@ public class Dealership {
         }
         return result;
     }
-    public ArrayList<Vehicle> getVehiclesByMakeModel() {
-        return inventory;
+    public ArrayList<Vehicle> getVehiclesByMakeModel(Scanner scanner) {
+        System.out.println("Enter the desired make of vehicle");
+        String make = scanner.nextLine();
+        System.out.println("Enter the desired model of vehicle");
+        String model = scanner.nextLine();
+
+        ArrayList<Vehicle> result = new ArrayList<>();
+        for (Vehicle vehicle : inventory) {
+            if (vehicle.getMake().equalsIgnoreCase(make) && vehicle.getModel().equalsIgnoreCase(model)) {
+                 result.add(vehicle);
+            }
+        }
+        return result;
     }
     public ArrayList<Vehicle> getVehiclesByYear() {
         return inventory;

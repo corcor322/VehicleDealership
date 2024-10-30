@@ -82,7 +82,8 @@ public class UserInterface {
         displayVehicles(vehicles);
     }
     public void processGetByMakeModelRequest() {
-        ArrayList<Vehicle> vehicles = dealership.getVehiclesByMakeModel();
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Vehicle> vehicles = dealership.getVehiclesByMakeModel(scanner);
         displayVehicles(vehicles);
     }
     public void processGetByYearRequest() {
