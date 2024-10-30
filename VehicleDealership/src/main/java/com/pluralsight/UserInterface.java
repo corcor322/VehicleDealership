@@ -77,7 +77,8 @@ public class UserInterface {
     }
 
     public void processGetByPriceRequest() {
-        ArrayList<Vehicle> vehicles = dealership.getVehiclesByPrice();
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Vehicle> vehicles = dealership.getVehiclesByPrice(scanner);
         displayVehicles(vehicles);
     }
     public void processGetByMakeModelRequest() {

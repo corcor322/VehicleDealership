@@ -17,8 +17,19 @@ public class Dealership {
         this.phone = phone;
         this.inventory = new ArrayList<>();
     }
-    public ArrayList<Vehicle> getVehiclesByPrice() {
-        return inventory;
+    public ArrayList<Vehicle> getVehiclesByPrice(Scanner scanner) {
+        System.out.println("Enter the minimum vehicle price.");
+        double minPrice = scanner.nextDouble();
+        System.out.println("Enter the maximum vehicle price.");
+        double maxPrice = scanner.nextDouble();
+
+        ArrayList<Vehicle> result = new ArrayList<>();
+        for (Vehicle vehicle : inventory) {
+            if (vehicle.getPrice() >= minPrice && vehicle.getPrice() <= maxPrice) {
+                result.add(vehicle);
+            }
+        }
+        return result;
     }
     public ArrayList<Vehicle> getVehiclesByMakeModel() {
         return inventory;
