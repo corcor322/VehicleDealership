@@ -18,22 +18,22 @@ public class Dealership {
         this.inventory = new ArrayList<>();
     }
     public ArrayList<Vehicle> getVehiclesByPrice() {
-        return null;
+        return inventory;
     }
     public ArrayList<Vehicle> getVehiclesByMakeModel() {
-        return null;
+        return inventory;
     }
     public ArrayList<Vehicle> getVehiclesByYear() {
-        return null;
+        return inventory;
     }
     public ArrayList<Vehicle> getVehiclesByColor() {
-        return null;
+        return inventory;
     }
     public ArrayList<Vehicle> getVehiclesByMileage() {
-        return null;
+        return inventory;
     }
     public ArrayList<Vehicle> getVehiclesByType() {
-        return null;
+        return inventory;
     }
     public ArrayList<Vehicle> getAllVehicles() {
         return inventory;
