@@ -84,4 +84,15 @@ public class Vehicle {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    public String toString() {
+        return "Vehicle [VIN:" + vin +
+                ", Year: " + year +
+                ", Make: " + make +
+                ", Model: " + model +
+                ", Color: " + color +
+                ", Type: " + type +
+                ", Mileage: " + odometer +
+                ", Price: $" + price + "]";
+    }
 }
