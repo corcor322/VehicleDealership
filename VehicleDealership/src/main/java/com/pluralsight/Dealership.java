@@ -46,8 +46,20 @@ public class Dealership {
         }
         return result;
     }
-    public ArrayList<Vehicle> getVehiclesByYear() {
-        return inventory;
+    public ArrayList<Vehicle> getVehiclesByYear(Scanner scanner) {
+        System.out.println("Enter the oldest year of vehicle you would like to search.");
+        int oldestYear = scanner.nextInt();
+        System.out.println("Enter the newest year of vehicle you would like to search.");
+        int newestYear = scanner.nextInt();
+
+        ArrayList<Vehicle> result = new ArrayList<>();
+        for (Vehicle vehicle: inventory) {
+            if (vehicle.getYear() >= oldestYear && vehicle.getYear() <= newestYear); {
+                result.add(vehicle);
+            }
+
+        }
+        return result;
     }
     public ArrayList<Vehicle> getVehiclesByColor() {
         return inventory;

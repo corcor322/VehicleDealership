@@ -87,7 +87,8 @@ public class UserInterface {
         displayVehicles(vehicles);
     }
     public void processGetByYearRequest() {
-        ArrayList<Vehicle> vehicles = dealership.getVehiclesByYear();
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Vehicle> vehicles = dealership.getVehiclesByYear(scanner);
         displayVehicles(vehicles);
 
     }
