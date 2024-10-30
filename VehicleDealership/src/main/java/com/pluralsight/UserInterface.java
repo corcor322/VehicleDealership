@@ -100,7 +100,10 @@ public class UserInterface {
     public void processAddVehicleRequest() {
     // Call dealership's get all vehicles method
     // Call displayVehicle's helper method passing list returned from getAllVehicles
+        ArrayList<Vehicle> vehicles = dealership.getAllVehicles();
+        displayVehicles(vehicles);
     }
+
     public void processRemoveVehicleRequest () {
 
     }
