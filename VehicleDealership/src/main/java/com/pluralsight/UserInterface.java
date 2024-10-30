@@ -53,7 +53,7 @@ public class UserInterface {
         }
     }
     public void displayMenu() {
-        System.out.println("Welcome! What would you like to do?");
+        System.out.println("What would you like to do?");
         System.out.println(" ");
         System.out.println("1 Find vehicles within a price range");
         System.out.println("2 Find vehicles by year range");
@@ -77,22 +77,30 @@ public class UserInterface {
     }
 
     public void processGetByPriceRequest() {
-
+        ArrayList<Vehicle> vehicles = dealership.getVehiclesByPrice();
+        displayVehicles(vehicles);
     }
     public void processGetByMakeModelRequest() {
-
+        ArrayList<Vehicle> vehicles = dealership.getVehiclesByMakeModel();
+        displayVehicles(vehicles);
     }
     public void processGetByYearRequest() {
+        ArrayList<Vehicle> vehicles = dealership.getVehiclesByYear();
+        displayVehicles(vehicles);
 
     }
     public void processGetByColorRequest() {
-
+        ArrayList<Vehicle> vehicles = dealership.getVehiclesByColor();
+        displayVehicles(vehicles);
     }
     public void processGetByMileageRequest() {
+        ArrayList<Vehicle> vehicles = dealership.getVehiclesByMileage();
+        displayVehicles(vehicles);
 
     }
     public void processGetByVehicleTypeRequest() {
-
+        ArrayList<Vehicle> vehicles = dealership.getVehiclesByType();
+        displayVehicles(vehicles);
     }
     public void processGetAllVehiclesRequest() {
         // Call dealership's get all vehicles method
