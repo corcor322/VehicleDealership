@@ -98,12 +98,14 @@ public class UserInterface {
         displayVehicles(vehicles);
     }
     public void processGetByMileageRequest() {
-        ArrayList<Vehicle> vehicles = dealership.getVehiclesByMileage();
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Vehicle> vehicles = dealership.getVehiclesByMileage(scanner);
         displayVehicles(vehicles);
 
     }
     public void processGetByVehicleTypeRequest() {
-        ArrayList<Vehicle> vehicles = dealership.getVehiclesByType();
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Vehicle> vehicles = dealership.getVehiclesByType(scanner);
         displayVehicles(vehicles);
     }
     public void processGetAllVehiclesRequest() {

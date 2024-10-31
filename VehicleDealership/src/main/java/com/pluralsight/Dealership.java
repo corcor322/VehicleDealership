@@ -73,11 +73,31 @@ public class Dealership {
         }
         return result;
     }
-    public ArrayList<Vehicle> getVehiclesByMileage() {
-        return inventory;
+    public ArrayList<Vehicle> getVehiclesByMileage(Scanner scanner) {
+        System.out.println("What's the minimum odometer rating for vehicles you would like to search?");
+        int minMiles = scanner.nextInt();
+        System.out.println("What's the maximum odometer rating for vehicles you would like to search?");
+        int maxMiles = scanner.nextInt();
+
+        ArrayList<Vehicle> result = new ArrayList<>();
+        for (Vehicle vehicle : inventory) {
+            if (vehicle.getOdometer() >= minMiles && vehicle.getOdometer() <= maxMiles) {
+                result.add(vehicle);
+            }
+        }
+        return result;
     }
-    public ArrayList<Vehicle> getVehiclesByType() {
-        return inventory;
+    public ArrayList<Vehicle> getVehiclesByType(Scanner scanner) {
+        System.out.println("What type of vehicle are you searching for?");
+        String type = scanner.nextLine();
+
+        ArrayList<Vehicle> result = new ArrayList<>();
+        for (Vehicle vehicle : inventory) {
+            if (vehicle.getType().equalsIgnoreCase(type)) {
+                result.add(vehicle);
+            }
+        }
+        return result;
     }
     public ArrayList<Vehicle> getAllVehicles() {
         return inventory;
