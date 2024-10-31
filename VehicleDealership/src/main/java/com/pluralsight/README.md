@@ -31,27 +31,22 @@ Follow these steps to get your application running within IntelliJ IDEA:
 1. Open IntelliJ IDEA.
 2. Select "Open" and navigate to the directory where you cloned or downloaded the project.
 3. After the project opens, wait for IntelliJ to index the files and set up the project.
-4. Find the main class with the `public static void main(String[] args)` method. This is in the class titled "FinancialTracker".
-5. Right-click on the file and select 'Run 'FinancialTracker.main()'' to start the application.
+4. Find the main class with the `public static void main(String[] args)` method. This is in the class titled "Main".
+5. Right-click on the file and select 'Run 'Main.main()'' to start the application.
 
 ## Technologies Used
 
 - Java: Java 17
 
 
-## Demo
-
-Here are some screenshots of the program in action:
-
-![Main Menu](src/main/resources/mainMenu.png)
-![Add Deposit](src/main/resources/addDeposit.png)
-![Invalid Format](src/main/resources/invalidFormat.png)
-![Ledger Menu](src/main/resources/ledgerMenu.png)
-![Reports](src/main/resources/reports.png)
-
 ## Future Work
 
 Additional work that could be done with this project:
+
+- Correctly completing the addVehicle and removeVehicle methods
+- filtering multiple fields at the same time
+- Adding a customer base to assign purchased vehicles for salespeople to keep track of their clients
+- implementing partial matches for the vehicle make and model
 
 
 ## Resources
@@ -60,8 +55,6 @@ In addition to the material covered in class, the following tutorials and docume
 
 - [Java ArrayList](https://www.w3schools.com/java/java_arraylist.asp)**
 - [Java Switch](https://www.w3schools.com/java/java_switch.asp)**
-- [Temporal Adjuster](https://docs.oracle.com/javase/tutorial/datetime/iso/adjusters.html)
-- [Compare Two LocalDate Instances in Java](https://howtodoinjava.com/java/date-time/compare-localdates/#:~:text=LocalDate%20equals()%20Method,can%20use%20equals()%20method.)
 
 
 ## Team Members
@@ -74,3 +67,5 @@ In addition to the material covered in class, the following tutorials and docume
 
 - Many thanks to Raymond, my Java bootcamp instructor, for being on standby to help with issues.
 - Thanks to Brandon for helping me instantiate the Inventory ArrayList from the Dealership Constructor.
+- Thank you, Timmy, my brother, for giving me your favorite cars to fill up the CSV file.
+- Thanks to Aaron, Carmen, and Joseph whose study group gave me motivation to work on the workshop.

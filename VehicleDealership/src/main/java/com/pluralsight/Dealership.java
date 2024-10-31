@@ -1,5 +1,8 @@
 package com.pluralsight;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Vector;
@@ -138,6 +141,23 @@ public class Dealership {
         Vehicle vehicle = new Vehicle(vin, year, make, model, type, color, odometer, price);
         vehicles.add(vehicle); //Add vehicle to array and to file
         inventory.add(vehicle);
+
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\Users\\Student\\Desktop\\pluralsight\\workshops\\VehicleDealership\\VehicleDealership\\src\\main\\resources\\dealership.csv", true))) {
+            String line = vehicle.getVin() + "|" +
+                    vehicle.getVin() + "|" +
+                    vehicle.getYear() + "|" +
+                    vehicle.getMake() + "|" +
+                    vehicle.getModel() + "|" +
+                    vehicle.getColor() + "|" +
+                    vehicle.getType() + "|" +
+                    vehicle.getOdometer() + "|" +
+                    vehicle.getPrice();
+            bw.write(line);
+            bw.newLine();
+
+        } catch (IOException e) {
+            System.out.println("Error writing to file");
+        }
 
 
     }
