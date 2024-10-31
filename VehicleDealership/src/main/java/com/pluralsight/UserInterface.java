@@ -93,7 +93,8 @@ public class UserInterface {
 
     }
     public void processGetByColorRequest() {
-        ArrayList<Vehicle> vehicles = dealership.getVehiclesByColor();
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Vehicle> vehicles = dealership.getVehiclesByColor(scanner);
         displayVehicles(vehicles);
     }
     public void processGetByMileageRequest() {

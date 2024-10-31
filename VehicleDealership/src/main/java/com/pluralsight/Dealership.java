@@ -61,8 +61,17 @@ public class Dealership {
         }
         return result;
     }
-    public ArrayList<Vehicle> getVehiclesByColor() {
-        return inventory;
+    public ArrayList<Vehicle> getVehiclesByColor(Scanner scanner) {
+        System.out.println("Enter the color of vehicle you'd like to search for.");
+        String color = scanner.nextLine();
+
+        ArrayList<Vehicle> result = new ArrayList<>();
+        for (Vehicle vehicle : inventory) {
+            if (vehicle.getColor().equalsIgnoreCase(color)) {
+                result.add(vehicle);
+            }
+        }
+        return result;
     }
     public ArrayList<Vehicle> getVehiclesByMileage() {
         return inventory;
